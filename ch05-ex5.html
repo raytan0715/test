@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form method="post" action="mailto:s811227@sphs.hc.edu.tw" enctype="text/plain">
+        <h3>教學意見調查表</h3>
+        <fieldset>
+            <legend>個人及課程資料</legend>
+            <ol>
+                <li>
+                    科目名稱:<input type="text" name="subject_name" size="20">
+                </li>
+                <li>
+                    請選擇系所:
+                    <select name="department" size="1">
+                        <option value="英文系">英文系</option>
+                        <option value="資管系">資管系</option>
+                        <option value="工業系">工業系</option>
+                        <option value="機械系">機械系</option>
+                        <option value="企管系">企管系</option>
+                    </select>
+                </li>
+                <li>
+                    講師:<input type="text" name="lecture_name" size="20">
+                </li>
+                <li>
+                    性別:
+                    <input type="radio" name="sexual" value="male" checked />男生<!-- 若是後面沒加這個，男生、女生文字不會跳出-->
+                    <input type="radio" name="sexual" value="female" checked />女生
+                </li>
+                <li>
+                    開課日期: <input type="date" name="calendar">
+                </li>
+            </ol>
+        </fieldset>
+
+        <fieldset>
+            <legend>意見調查</legend>
+            <ol>
+                <li>
+                    這門課的出席狀況
+                    <label><input type="radio" name="attend" id="attend" value="沒有缺課" />沒有缺課</label>
+                    <label><input type="radio" name="attend" id="attend" value="缺課1-3次" />缺課1-3次</label>
+                    <label><input type="radio" name="attend" id="attend" value="缺課4-6" />缺課4-6</label>
+                    <label><input type="radio" name="attend" id="attend" value="缺課6次以上" />缺課6次以上</label>
+                </li>
+                <li>
+                    你對這門課的學習態度
+                    <label><input type="radio" name="attitude" id="attitude" value="很認真" />很認真</label>
+                    <label><input type="radio" name="attitude" id="attitude" value="還算認真" />還算認真</label>
+                    <label><input type="radio" name="attitude" id="attitude" value="很不認真" />很不認真</label>
+                </li>
+                <li>
+                    修習這門課的可能原因(可複選)
+                    <label><input type="checkbox" name="reason" id="reason" value="必修" />很認真</label>
+                    <label><input type="checkbox" name="reason" id="reason" value="湊學分" />湊學分</label>
+                    <label><input type="checkbox" name="reason" id="reason" value="個人興趣" />個人興趣</label>
+                    <label><input type="checkbox" name="reason" id="reason" value="其他原因" />其他原因</label>
+                </li>
+                <li>
+                    請簡述你對此門課程的期望或改進的建議:<br>
+                    <textarea name="comment" id="" cols="50" rows="4"></textarea>
+                </li>
+            </ol>
+        </fieldset>
+        <input type="submit" value="送出" />
+        <input type="reset" value="重設" />
+    </form>
+</body>
+</html>

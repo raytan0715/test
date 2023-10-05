@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--table>tr*4>td*3-->
+    <table border="1" width="400px"> <!-- 邊界粗=1,各列寬400px-->
+        <tr>    <!-- tr =橫排數量 td/th 直排數量-->
+            <td>NAME</td>
+            <td>EX1</td>
+            <td>EX2</td>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td rowspan="2">100</td>
+            <td rowspan="2">50</td>
+        </tr>
+        <tr>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td rowspan="2">C</td><!-- rowspan 上下縮排, colspan 左右縮排-->
+            <td>66</td>
+            <td>44</td>
+        </tr>
+        <tr>
+            <td>90</td>
+            <td>70</td>
+        </tr>
+    </table>
+
+</body>
+</html>
